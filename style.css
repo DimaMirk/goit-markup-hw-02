@@ -27,6 +27,7 @@
 body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+  color: var(--ptimary-text-color);
 }
 
 /* Стилі для головної сторінки */
@@ -103,6 +104,10 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
 }
+.button:hover,
+.button:focus {
+  cursor: pointer;
+}
 /* section */
 .section-title {
   color: var(--ptimary-text-color);
@@ -145,6 +150,7 @@ body {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
 }
 /* backgrounds */
 header {
@@ -203,6 +209,7 @@ footer {
 .filter-button:hover {
   background: var(--accent-color);
   color: var(--white-color);
+  cursor: pointer;
 }
 .project-item {
   color: var(--ptimary-text-color);

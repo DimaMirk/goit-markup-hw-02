@@ -1,0 +1,224 @@
+/* Текст */
+
+/* #212121  - колір основного тексту*/
+/* #757575  - колір другорядного тексту */
+/* #2196F3  - колір оформлення (акцент) (синій колір) */
+/* #FFFFFF, 60 % - колір тексту в футері + прозорість */
+/* #FFFFFF  - основний білий колір */
+
+/* Кольори фону */
+
+/*  #FFFFFF  - колір навігації*/
+/* #E5E5E5   - основний фон */
+/* #F5F4FA   - другий фон */
+/* #2F303A   - колір футеру та  hero  */
+
+:root {
+  --ptimary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --secondary-text-color-plus: rgba(255, 255, 255, 0.6);
+  --white-color: #ffffff;
+}
+
+.list {
+  list-style: none;
+}
+body {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* Стилі для головної сторінки */
+
+/* Logo */
+.logo {
+  color: var(--ptimary-text-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo .accent {
+  color: var(--accent-color);
+}
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
+
+/* nav */
+.site-nav {
+  color: var(--ptimary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav .link {
+  color: var(--ptimary-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* Head contacts */
+
+.first-contacts-list {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.first-contacts-list:hover,
+.first-contacts-list:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  color: var(--white-color);
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.button {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+/* section */
+.section-title {
+  color: var(--ptimary-text-color);
+}
+/* Benefits */
+.benefits-title {
+  color: var(--ptimary-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.benefits-text {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Team */
+.section-title.images {
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+.section-title.team {
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+.section-title-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+.section-title-item-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+/* backgrounds */
+header {
+  background-color: var(--white-color);
+}
+.section .benefits,
+.section .images {
+  background-color: #e5e5e5;
+}
+.section .team {
+  background-color: #f5f4fa;
+}
+footer {
+  background-color: #2f303a;
+}
+
+/* footer */
+.logo-two {
+  color: var(--white-color);
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo-two .accent {
+  color: var(--accent-color);
+}
+.address {
+  font-style: normal;
+  color: var(--white-color);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer-contact-link {
+  color: var(--secondary-text-color-plus);
+}
+
+/* Стилі для сторінки Портфоліо */
+
+.filter-button {
+  background: #f5f4fa;
+  color: #212121;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.filter-button:focus,
+.filter-button:hover {
+  background: var(--accent-color);
+  color: var(--white-color);
+}
+.project-item {
+  color: var(--ptimary-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.project-item-text {
+  color: var(--secondary-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}

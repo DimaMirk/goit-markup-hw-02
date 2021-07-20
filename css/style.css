@@ -19,6 +19,7 @@
   --accent-color: #2196f3;
   --secondary-text-color-plus: rgba(255, 255, 255, 0.6);
   --white-color: #ffffff;
+  --our-team-backgroud-color: #f5f4fa;
 }
 
 .list {
@@ -28,6 +29,10 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   color: var(--ptimary-text-color);
+  background-color: var(--white-color);
+}
+a {
+  text-decoration: none;
 }
 
 /* Стилі для головної сторінки */
@@ -40,10 +45,6 @@ body {
   line-height: 1.19;
 }
 .logo .accent {
-  color: var(--accent-color);
-}
-.logo:hover,
-.logo:focus {
   color: var(--accent-color);
 }
 
@@ -129,7 +130,7 @@ body {
 }
 
 /* Team */
-.section-title.images {
+.doing-title.images {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
@@ -156,12 +157,11 @@ body {
 header {
   background-color: var(--white-color);
 }
-.section .benefits,
-.section .images {
-  background-color: #e5e5e5;
+.works.section {
+  background-color: var(--white-color);
 }
-.section .team {
-  background-color: #f5f4fa;
+.section.team {
+  background-color: var(--our-team-backgroud-color);
 }
 footer {
   background-color: #2f303a;
@@ -193,7 +193,9 @@ footer {
 }
 
 /* Стилі для сторінки Портфоліо */
-
+.filters {
+  display: inline-block;
+}
 .filter-button {
   background: #f5f4fa;
   color: #212121;
